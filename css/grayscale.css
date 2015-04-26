@@ -4,10 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- /*vert clair #79AD00
-orange: #C94900;
-vert foncé:#095625;
- */
+ @font-face {
+    font-family: CarnavalShow;
+    src: url(../fonts/Carnevalee_Freakshow.ttf);
+}
 
 body {
     width: 100%;
@@ -22,6 +22,10 @@ html {
     height: 100%;
 }
 
+h1.main-title {
+    font-size: 600%;
+}
+
 h1,
 h2,
 h3,
@@ -30,8 +34,9 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: CarnavalShow, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 1500;
+    font-size: 300%;
     letter-spacing: 1px;
 }
 
@@ -48,6 +53,7 @@ p {
 
 .parcours-image {
     padding-left: 0;
+    height:100%;
 }
 
 .parcours-text {
@@ -62,21 +68,21 @@ p {
     list-style-image: url(../img/chrono_bullet.svg);
     padding-bottom: 150px; 
     padding-top: 50px;
-    font-size: 26px; 
+    font-size: 20px; 
     vertical-align: top;
 }
 
 .parcours-text li{
     list-style-image: url(../img/chrono_bullet.svg);
     padding-bottom: 200px; 
-    font-size: 26px; 
+    font-size: 20px; 
     vertical-align: top;
 }
 
 .parcours-text li.arrivee{
     list-style-image: url(../img/bus_bullet.svg);
     padding-bottom: 200px; 
-    font-size: 26px; 
+    font-size: 20px; 
     vertical-align: top;
 }
 
@@ -199,7 +205,7 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: #000;
     background: url(../img/first-page.png) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -235,16 +241,16 @@ a:focus {
         font-size: 26px;
     }
 }
-
+/*
 .btn-circle {
     width: 70px;
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     border-radius: 100%!important;
     font-size: 40px;
-    color: #fff;
+    color: #000;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -254,8 +260,20 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: #000;
     background: rgba(255,255,255,.1);
+}*/
+.btn-houblon {
+    outline: 0;
+    color: #fff;
+    background: url(../img/houblon_noir.svg) no-repeat;
+}
+
+.btn-houblon:hover,
+.btn-houblon:focus {
+    outline: 0;
+    color: #fff;
+    background: url(../img/houblon_noir_transparent.svg) no-repeat;
 }
 
 .btn-circle i.animated {
