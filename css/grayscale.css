@@ -14,7 +14,7 @@ body {
     height: 100%;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #000;
-    background-color: rgba(130, 186, 0, 1);
+    background-color: rgba(153, 195, 57, 1);
 }
 
 html {
@@ -48,7 +48,7 @@ p {
 
 .parcours-section {
         padding: 0px 0;
-        background-color: rgba(130, 186, 0, 1);
+        background-color: rgba(153, 195, 57, 1);
     }
 
 .parcours-image {
@@ -139,6 +139,8 @@ a:focus {
     color: #000;
 }
 
+
+
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
@@ -171,7 +173,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(130, 186, 0, 1);
+    background-color: rgba(153, 195, 57, 1);
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -337,7 +339,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background-color: rgba(130, 186, 0, 1);
+    background-color: rgba(153, 195, 57, 1);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -359,7 +361,7 @@ a:focus {
 
     .parcours-section {
         padding: 50px 0;
-        background-color: rgba(130, 186, 0, 1);
+        background-color: rgba(153, 195, 57, 1);
     }
 
     #map {
