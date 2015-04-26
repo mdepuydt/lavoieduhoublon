@@ -2,7 +2,8 @@
  * Les acolytes anonymes 2015 
  */
 
-
+// hide La voie du houblon at first load
+$(".navbar-brand").hide();
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
