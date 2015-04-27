@@ -63,23 +63,26 @@ p {
     padding-top: 20px;    
 }
 .parcours-text li.depart{
-    list-style-image: url(../img/chrono_bullet.svg);
-    padding-bottom: 150px; 
-    padding-top: 50px;
+    list-style-image: url(../img/Coureur.svg);
     font-size: 20px; 
     vertical-align: top;
 }
 
+.parcours-text li.ravito{
+    list-style-image: url(../img/beer_bullet.svg);
+    font-size: 20px; 
+    vertical-align: top;
+    list-style-position: inside;
+}
+
 .parcours-text li{
     list-style-image: url(../img/chrono_bullet.svg);
-    padding-bottom: 200px; 
     font-size: 20px; 
     vertical-align: top;
 }
 
 .parcours-text li.arrivee{
     list-style-image: url(../img/bus_bullet.svg);
-    padding-bottom: 200px; 
     font-size: 20px; 
     vertical-align: top;
 }
@@ -109,6 +112,31 @@ a:hover,
 a:focus {
     text-decoration: none;
     color: rgba(201, 73, 0, 0.7);
+}
+.img-portfolio {
+    margin: 0 auto;
+    max-height: 150px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+.important {
+    color: #C94900;
+    font-style: bold;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.decompte {
+    color: #C94900;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 400%;
+    text-transform: uppercase;
 }
 
 .light {

@@ -107,10 +107,20 @@
                 <h2>Parcours</h2>
                 <ul>
                     <li class="depart"> Départ sous le pont neuf </li>
-                    <li> Ravitaillement 1 au Ziquodrome </li>
-                    <li> Ravitaillement 2 à la Croix Saint Ouen </li>
-                    <li> Ravitaillement 3 à Saint Sauveur </li>
+                    <li class="ravito"> Ravitaillement 1 au Ziquodrome </li>
+                    <li class="ravito"> Ravitaillement 2 à la Croix Saint Ouen </li>
+                    <li class="ravito"> Ravitaillement 3 à Saint Sauveur </li>
                     <li class="arrivee"> Arrivée à la Cauette à Bière </li>
+                </ul>
+                <p>Le temps accordé pour effectuer le parcours est de 4H00 maximum. </p>
+                <p>Les participants partiront par groupe en fonction de leur objectif de temps par mesure de sécurité mais aussi de convivialité. Chaque groupe s’engagera à ne jamais laisser seul un de ses membres à part pour le premier groupe. Les participants pourront eux même choisir leur objectif. </p>
+                <ul>
+                    <li> Groupe 1 : Objectif 1H30 (#course) </li>
+                    <li> Groupe 2 : Objectif 2H00 </li>
+                    <li> Groupe 3 : Objectif 2H30 </li>
+                    <li> Groupe 4 : Objectif 3H00 </li>
+                    <li> Groupe 5 : Objectif 3H30 </li>
+                    <li> Groupe 6 : Objectif 4H00 </li>
                 </ul>
             </div>
         </div>
@@ -121,17 +131,21 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Billeterie</h2>
-                <p>Le prix de la place est fixé à 15€.</p>
+                <p>Le prix de la place est fixé à 12€ pour les étudaints de l'UTC cotisants au BDE et de 15€ pour tous les autres participants.</p>
                 <p> Il comprend: 3 dégustations de bières et de mets tout le long du parcours ainsi qu'une bière offerte à l'arrivée à la Cauette à Bière et une surprise pour tous les finishers.</p>
                 <p> Nous vous attondons donc nombreux au départ samedi 16 mai à 13h30 sous le Pont Neuf de Compiègne.</p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="http://assos.utc.fr/shotgun/index" class="btn btn-default btn-lg"> <span class="network-name">Etudiants UTC/escom</span></a>
-                    </li>
-                    <li class="last-child">
-                        <a href="http://www.weezevent.com/" class="btn btn-default btn-lg"><span class="network-name">Extérieurs</span></a>
-                    </li>
-                </ul>
+                <div id="compte_a_rebours"></div>
+                <div id="billetterie-link">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="http://assos.utc.fr/shotgun/index" class="btn btn-default btn-lg"> <span class="network-name">Etudiants UTC/escom</span></a>
+                        </li>
+                        <li class="last-child">
+                            <a href="http://www.weezevent.com/" class="btn btn-default btn-lg"><span class="network-name">Extérieurs</span></a>
+                        </li>
+                    </ul>
+                    <p> <span class="important"> Attention: </span> les étudiants ne possédant pas de carte étudiante sont invités à prendre via la billeterie pour les extérieurs pour qu'on leur fournisse une carte.</p> 
+                </div>
             </div>
         </div>
     </section>
@@ -139,6 +153,97 @@
     <!-- Map Section    
      <div id="map"></div> -->
 
+    <!-- Partenaire section -->
+    <div id="partenaire"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Partenaires</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="https://plus.google.com/115117447717562926932/about">
+                                    <img class="img-portfolio img-responsive" src="img/boiteFromage.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="http://assos.utc.fr/asso/alarutc">
+                                    <img class="img-portfolio img-responsive" src="img/alarutc.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="https://www.facebook.com/pmde.utc">
+                                    <img class="img-portfolio img-responsive" src="img/pmde.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="http://assos.utc.fr/lafouleeutceenne/">
+                                    <img class="img-portfolio img-responsive" src="img/lafoulee.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <a href="http://assos.utc.fr/asso/charcutc">
+                                    <img class="img-portfolio img-responsive" src="img/charutc.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <a href="http://www.agglo-compiegne.fr/">
+                                    <img class="img-portfolio img-responsive" src="img/mairie_compiegne.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <a href="http://assos.utc.fr/picasso/">
+                                    <img class="img-portfolio img-responsive" src="img/picasso.png">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="http://le-grenierasel.blogspot.fr/">
+                                    <img class="img-portfolio img-responsive" src="img/grenierASel.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="http://www.yelp.fr/biz/au-croissant-dor%C3%A9-compi%C3%A8gne-2">
+                                    <img class="img-portfolio img-responsive" src="img/croissant.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="http://www.delicious-compiegne.com/">
+                                    <img class="img-portfolio img-responsive" src="img/delicious.jpg">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <a href="http://www.justacote.com/compiegne-60200/fleuriste/argevil-fleurs-1357661.htm">
+                                    <img class="img-portfolio img-responsive" src="img/argevil.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>

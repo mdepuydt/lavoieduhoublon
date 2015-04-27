@@ -2,8 +2,9 @@
  * Les acolytes anonymes 2015 
  */
 
-// hide La voie du houblon at first load
+// hide La voie du houblon at first load et les liens de la billeterie
 $(".navbar-brand").hide();
+$("#billetterie-link").hide();
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
@@ -31,12 +32,44 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
-/*
+
+var compte_a_rebours = document.getElementById("compte_a_rebours");
+var date_evenement = new Date("May 3 20:00:00 2015");
+//var date_evenement = new Date("Jan 3 20:00:00 2015");
+function decompte() {
+
+    var date_actuelle = new Date();    
+    var total_secondes = (date_evenement - date_actuelle) / 1000;
+    var jours = Math.floor(total_secondes / (60 * 60 * 24));
+    var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
+    var minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
+    var secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
+
+    var prefixe = "<p> La billetterie ouvre dimanche 3 mai à 20h00 soit dans </p>";
+    if (total_secondes < 0)
+    {
+        $("#billetterie-link").show();
+        compte_a_rebours.hide();
+    }
+
+    if (total_secondes > 0)
+    {
+        compte_a_rebours.innerHTML = prefixe + '<p class="decompte">' + jours + ' : ' + heures + ' : ' + minutes + ' : ' + secondes + ' </p>';
+    }
+    else // Si total_secondes == 0 (puisque l'on a prit sa valeur absolue)
+    {
+        $("#billetterie-link").show();
+        compte_a_rebours.hide();
+    }
+    var actualisation = setTimeout("decompte();", 1000);
+}
+decompte();
+
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 
-function init() {
+/*function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
@@ -178,5 +211,4 @@ function init() {
         map: map,
         icon: image
     });
-}
-*/
+}*/
